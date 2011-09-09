@@ -1,0 +1,19 @@
+{
+  "name": "express-cache",
+  "description": "Express middleware for caching responses on disk or in memory.",
+  "version": "0.0.1",
+  "homepage": "http://github.com/joehewitt/express-cache",
+  "repository": {
+      "type": "git",
+      "url" : "http://github.com/joehewitt/express-cache.git"
+  },
+  "keywords": ["express"],
+  "author": "Joe Hewitt <joe@joehewitt.com>",
+  "dependencies": {
+    "buffers": "",
+    "dandy": "",
+    "diskcache": ""
+  },
+  "engines": { "node": ">=0.4.0" },
+  "main": "./cache"
+}
