@@ -10,8 +10,6 @@ var reContentType = /^(.*?);\s+charset=(.*?)$/i;
 module.exports = function(cache) {
     if (!cache) {
         cache = new Cache(null, false, true, true);
-    } else if (!(cache instanceof Cache)) {
-        cache = new Cache(cache.path, cache.useDisk, cache.useMem, cache.useGzip);
     }
 
     return function(req, res, next) {
