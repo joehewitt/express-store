@@ -43,12 +43,16 @@ module.exports = function(cache) {
         function render() {
             var write = res.write;
             res.write = function(data, encoding) {
-                body.push(new Buffer(data, encoding));
+                if (typeof data == 'number' || data) {
+                    body.push(new Buffer(data, encoding));
+                }
             }
 
             var end = res.end;
             res.end = function(data, encoding) {
-                body.push(new Buffer(data, encoding));
+                if (typeof data == 'number' || data) {
+                    body.push(new Buffer(data, encoding));
+                }
 
                 res.write = write;
                 res.end = end;
