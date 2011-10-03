@@ -148,7 +148,8 @@ function canZipType(mimeType) {
 }
 
 function requestAccepts(req, encoding) {
-    var accepts = 'accept-encoding' in req.headers ? req.header('accept-encoding').split(/\s*,\s*/) : [];
+    var header = 'accept-encoding' in req.headers ? req.header('accept-encoding') || '' : '';
+    var accepts = header.split(/\s*,\s*/);
     return accepts.indexOf(encoding) != -1;
 }
 
