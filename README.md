@@ -1,4 +1,4 @@
-express-cache
+express-store
 ===============
 
 Express middleware for caching responses on disk or in memory.
@@ -11,7 +11,7 @@ Usage
 Installation
 ------------
 
-    $ npm install express-cache
+    $ npm install express-store
 
 License 
 -------
