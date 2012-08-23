@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/joehewitt/express-store.png)](http://travis-ci.org/joehewitt/express-store)
 express-store
 ===============
 
